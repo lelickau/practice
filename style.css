@@ -1,1 +1,45 @@
 
+body{
+    box-sizing: border-box;
+    font-size: 20px;
+    line-height: 25px;
+    color: #fff;
+    background-color: #444444;
+}
+.navigation__link{
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;display: inline-block;
+    
+}
+.navigation__link:hover{
+    color: rgb(107, 255, 255);
+    transition: .9s;
+    
+}
+.navigation__item{
+    
+}
+.navigation__link:after {
+	display: block;
+	position: absolute;
+	left: 0; /*изменить на right:0;, чтобы изменить направление подчёркивания */
+	width: 0;/*задаём длинну линии до наведения курсора*/
+	height: 2px; /*задаём ширину линии*/
+	background-color: #00a650; /*задаём цвет линии*/
+	content: "";
+	transition: width 0.3s ease-out; /*задаём время анимации*/
+}
+
+.navigation__link:hover:after,
+.navigation__link:focus:after {
+	width: 100%; /*устанавливаем значение 100% чтобы ссылка подчёркивалась полностью*/
+}
+li{
+    list-style-type: none;
+}
+.container{
+    max-width: 1220px;
+    padding: 0 10px;
+    margin: 0 auto;
+}
