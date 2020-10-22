@@ -1,2 +1,2 @@
 # practice
-https://lelickau.github.io/practice/index.html
+https://lelickau.github.io/practice/
